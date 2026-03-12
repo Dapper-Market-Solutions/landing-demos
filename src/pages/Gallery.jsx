@@ -6,7 +6,7 @@ const DEMOS = [
     title: 'Golf Cart Dealer',
     subtitle: 'Palmetto Carts Co.',
     description: 'Premium golf cart dealership with inventory showcase, financing CTA, and lead capture.',
-    image: 'https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&q=80',
+    image: 'https://iconev.com/wp-content/uploads/2024/09/ICON-i40L-Golf-Carts.jpg',
   },
   {
     slug: 'med-spa',
@@ -20,7 +20,7 @@ const DEMOS = [
     title: 'Golf Cart Dealer (Branded)',
     subtitle: 'Central Coast Carts',
     description: 'Branded dealership page with California coastal theme, service shop, FAQ, and lead capture.',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80',
+    image: 'https://epiccarts.com/wp-content/uploads/2025/08/EPIC-E60L-Golf-Carts-16_.jpg',
   },
   {
     slug: 'automotive',
