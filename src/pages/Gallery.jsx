@@ -125,7 +125,7 @@ export default function Gallery() {
               <span className="text-[#0a0e17] font-bold text-lg font-display">D</span>
             </div>
             <span className="text-sm font-medium tracking-widest uppercase text-white/40">
-              DapperIQ Demos
+              Dapper Market Solutions
             </span>
           </div>
           <h1 className="text-5xl sm:text-6xl font-display font-bold leading-[1.1] mb-5 tracking-tight">
@@ -206,7 +206,7 @@ export default function Gallery() {
         {/* Footer */}
         <div className="mt-16 pt-8 border-t border-white/5 text-center animate-fade-up delay-700">
           <p className="text-sm text-white/25">
-            DapperIQ &mdash; Dapper Market Solutions
+            Dapper Market Solutions
           </p>
         </div>
       </div>
