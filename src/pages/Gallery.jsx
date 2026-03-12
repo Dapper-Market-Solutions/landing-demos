@@ -54,7 +54,7 @@ const DEMOS = [
 
 export default function Gallery() {
   return (
-    <div className="min-h-screen bg-[#0a0e17] text-white font-body">
+    <div className="min-h-screen bg-[#00274c] text-white font-body">
       {/* Subtle grid background */}
       <div className="fixed inset-0 opacity-[0.03]"
         style={{
@@ -66,18 +66,13 @@ export default function Gallery() {
       <div className="relative max-w-5xl mx-auto px-6 py-16">
         {/* Header */}
         <div className="animate-fade-up mb-16">
-          <div className="flex items-center gap-3 mb-8">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center">
-              <span className="text-[#0a0e17] font-bold text-lg font-display">D</span>
-            </div>
-            <span className="text-sm font-medium tracking-widest uppercase text-white/40">
-              Dapper Market Solutions
-            </span>
+          <div className="mb-8">
+            <img src="/dms-logo-navy.png" alt="Dapper Market Solutions" className="h-10" style={{ filter: 'brightness(0) invert(1)', opacity: 0.85 }} />
           </div>
           <h1 className="text-5xl sm:text-6xl font-display font-bold leading-[1.1] mb-5 tracking-tight">
             Landing Page
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-amber-500">
+            <span style={{ color: '#ffcb05' }}>
               Templates
             </span>
           </h1>
@@ -117,7 +112,7 @@ export default function Gallery() {
                     style={{ filter: isLive ? 'brightness(0.7)' : 'brightness(0.4) grayscale(0.5)' }}
                   />
                   <div className="absolute inset-0" style={{
-                    background: 'linear-gradient(180deg, transparent 30%, rgba(17,24,37,0.8) 100%)',
+                    background: 'linear-gradient(180deg, transparent 30%, rgba(0,39,76,0.85) 100%)',
                   }} />
                   {!isLive && (
                     <div className="absolute top-4 right-4 text-[11px] font-bold uppercase tracking-widest
@@ -135,14 +130,16 @@ export default function Gallery() {
                 </div>
 
                 {/* Content */}
-                <div className="p-5 bg-[#111825]">
+                <div className="p-5" style={{ background: '#001d3d' }}>
                   <div className="flex items-start justify-between mb-2">
                     <div>
                       <h3 className="text-lg font-semibold text-white">{demo.title}</h3>
                       <span className="text-sm text-white/30">{demo.subtitle}</span>
                     </div>
                     {isLive && (
-                      <span className="mt-1 text-white/30 group-hover:text-amber-400 group-hover:translate-x-1 transition-all text-xl">
+                      <span className="mt-1 text-white/30 transition-all text-xl" style={{ '--hover-color': '#ffcb05' }}
+                        onMouseEnter={() => {}}
+                      >
                         &rarr;
                       </span>
                     )}
@@ -156,9 +153,7 @@ export default function Gallery() {
 
         {/* Footer */}
         <div className="mt-16 pt-8 border-t border-white/5 text-center animate-fade-up delay-700">
-          <p className="text-sm text-white/25">
-            Dapper Market Solutions
-          </p>
+          <img src="/dms-logo-navy.png" alt="Dapper Market Solutions" className="h-6 mx-auto" style={{ filter: 'brightness(0) invert(1)', opacity: 0.25 }} />
         </div>
       </div>
     </div>
