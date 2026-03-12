@@ -6,103 +6,49 @@ const DEMOS = [
     title: 'Golf Cart Dealer',
     subtitle: 'Palmetto Carts Co.',
     description: 'Premium golf cart dealership with inventory showcase, financing CTA, and lead capture.',
-    gradient: 'from-emerald-600 to-teal-800',
-    icon: (
-      <svg className="w-10 h-10" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2">
-        <rect x="8" y="18" width="28" height="14" rx="3" />
-        <circle cx="14" cy="36" r="4" />
-        <circle cx="30" cy="36" r="4" />
-        <path d="M36 18V12a2 2 0 00-2-2H20l-4 8" />
-        <line x1="10" y1="14" x2="20" y2="14" />
-        <path d="M36 22h4a2 2 0 012 2v4" />
-      </svg>
-    ),
+    image: 'https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&q=80',
   },
   {
     slug: 'med-spa',
     title: 'Med Spa',
     subtitle: 'Aura Health & Spa',
     description: 'Luxury medical spa with service showcase, before/after gallery, and booking form.',
-    gradient: 'from-[#5c8ba3] to-[#586e89]',
-    icon: (
-      <svg className="w-10 h-10" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2">
-        <path d="M24 4c-4 6-12 10-12 20a12 12 0 0024 0C36 14 28 10 24 4z" />
-        <path d="M24 28v-8M20 24h8" />
-      </svg>
-    ),
+    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80',
   },
   {
     slug: 'central-coast-carts',
     title: 'Golf Cart Dealer (Branded)',
     subtitle: 'Central Coast Carts',
-    description: 'Branded dealership page with dark navy theme, service shop, FAQ, and California-focused messaging.',
-    gradient: 'from-[#000321] to-[#08BDBD]',
-    icon: (
-      <svg className="w-10 h-10" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2">
-        <path d="M24 6l4 8h8l-6 6 2 8-8-4-8 4 2-8-6-6h8z" />
-        <circle cx="24" cy="36" r="6" />
-        <path d="M20 36h8" />
-      </svg>
-    ),
+    description: 'Branded dealership page with California coastal theme, service shop, FAQ, and lead capture.',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80',
   },
   {
     slug: 'automotive',
-    title: 'Luxury EV Dealership',
+    title: 'Luxury EV Dealership (Dark)',
     subtitle: 'Aether Motors',
-    description: 'Ultra-premium electric vehicle dealership with dark luxury aesthetic, spec modals, and private showing booking.',
-    gradient: 'from-[#1a1a1a] to-[#C4A265]',
-    icon: (
-      <svg className="w-10 h-10" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2">
-        <path d="M8 28h32M12 28l3-10h18l3 10" />
-        <circle cx="14" cy="34" r="4" />
-        <circle cx="34" cy="34" r="4" />
-        <path d="M18 34h12" />
-        <path d="M20 18l2-6h4l2 6" />
-      </svg>
-    ),
+    description: 'Ultra-premium electric vehicle dealership with dark luxury aesthetic, spec modals, and private showing.',
+    image: 'https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&q=80',
   },
   {
     slug: 'automotive-light',
     title: 'Luxury EV Dealership (Light)',
     subtitle: 'Aether Motors',
     description: 'Same premium EV dealership with a clean, light aesthetic — warm whites, bronze accents, and refined minimalism.',
-    gradient: 'from-[#FAFAF8] to-[#8B7355]',
-    icon: (
-      <svg className="w-10 h-10" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2">
-        <path d="M8 28h32M12 28l3-10h18l3 10" />
-        <circle cx="14" cy="34" r="4" />
-        <circle cx="34" cy="34" r="4" />
-        <path d="M18 34h12" />
-        <path d="M20 18l2-6h4l2 6" />
-      </svg>
-    ),
+    image: 'https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=800&q=80',
   },
   {
     slug: null,
     title: 'Solar Installer',
     subtitle: 'Coming Soon',
     description: 'Solar energy company with savings calculator, testimonials, and consultation booking.',
-    gradient: 'from-amber-500 to-orange-700',
-    icon: (
-      <svg className="w-10 h-10" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2">
-        <circle cx="24" cy="24" r="8" />
-        <path d="M24 4v6M24 38v6M4 24h6M38 24h6M10 10l4 4M34 34l4 4M10 38l4-4M34 14l4-4" />
-      </svg>
-    ),
+    image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80',
   },
   {
     slug: null,
     title: 'Roofing Company',
     subtitle: 'Coming Soon',
     description: 'Home services with damage assessment CTA, project gallery, and free estimate form.',
-    gradient: 'from-slate-600 to-slate-900',
-    icon: (
-      <svg className="w-10 h-10" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="2">
-        <path d="M4 22L24 6l20 16" />
-        <rect x="10" y="22" width="28" height="20" rx="1" />
-        <rect x="20" y="30" width="8" height="12" />
-      </svg>
-    ),
+    image: 'https://images.unsplash.com/photo-1632759145351-1d592919f522?w=800&q=80',
   },
 ]
 
@@ -162,12 +108,17 @@ export default function Gallery() {
                 `}
                 style={{ animationDelay: `${200 + i * 100}ms` }}
               >
-                {/* Gradient header strip */}
-                <div className={`h-32 bg-gradient-to-br ${demo.gradient} relative overflow-hidden`}>
-                  <div className="absolute inset-0 bg-black/20" />
-                  <div className="absolute bottom-4 left-5 text-white/80">
-                    {demo.icon}
-                  </div>
+                {/* Image header */}
+                <div className="h-40 relative overflow-hidden">
+                  <img
+                    src={demo.image}
+                    alt={demo.title}
+                    className="w-full h-full object-cover group-hover:scale-[1.05] transition-transform duration-700"
+                    style={{ filter: isLive ? 'brightness(0.7)' : 'brightness(0.4) grayscale(0.5)' }}
+                  />
+                  <div className="absolute inset-0" style={{
+                    background: 'linear-gradient(180deg, transparent 30%, rgba(17,24,37,0.8) 100%)',
+                  }} />
                   {!isLive && (
                     <div className="absolute top-4 right-4 text-[11px] font-bold uppercase tracking-widest
                                     bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full">
