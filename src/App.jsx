@@ -7,7 +7,7 @@ import CentralCoastCarts from './pages/CentralCoastCarts'
 import Automotive from './pages/Automotive'
 import AutomotiveLight from './pages/AutomotiveLight'
 
-const PASS_HASH = '5e3322f4' // simple hash of the password
+const PASS_HASHES = ['5e3322f4', '332937c0'] // hashes of accepted passwords
 
 function simpleHash(str) {
   let h = 0
@@ -24,7 +24,7 @@ function PasswordGate({ children }) {
 
   function handleSubmit(e) {
     e.preventDefault()
-    if (simpleHash(input) === PASS_HASH) {
+    if (PASS_HASHES.includes(simpleHash(input))) {
       sessionStorage.setItem('dms_auth', '1')
       setAuthed(true)
     } else {
